@@ -7,7 +7,7 @@
   --color-subtitle-h2: #ff0070;
   --color-subtitle-h3: #000028;
   --color-text: #f1b2ce;
-  --font-family: "IBM Plex Mono", sans-serif;
+  --font-family: "IBM Plex Mono", monospace;
   --font-size-theme-menu-item: 18px;
   --color-button-hover: rgb(255 0 112 / 0.4);
   --font-weight-content-list: 400;

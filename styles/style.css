@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  max-block-size: 668px;
+  min-block-size: 668px;
   block-size: 100vh;
   inline-size: 100%;
 }
@@ -45,10 +45,6 @@
   margin: 0 10px 66px;
   block-size: min-content;
   font-weight: var(--font-weight-subtitle);
-}
-
-span {
-  display: block;
 }
 
 .header__theme-menu {
@@ -87,10 +83,19 @@ span {
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--accent-color);
+  text-decoration: none;
+  outline: none;
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: none;
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .text-link {
-  text-shadow: 2px 2px 0 var(--bg-color-text);
+  text-shadow: 2px 2px 0 var(--title-decor);
+  text-decoration: none;
 }
 
 .text-link:hover {
@@ -98,7 +103,13 @@ span {
 }
 
 .text-link:focus-visible {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--color-text);
+  text-decoration: none;
+}
+
+.text-link:focus {
+  outline: 1px solid var(--color-text);
+  text-decoration: none;
 }
 
 .decorations::before,
@@ -210,6 +221,8 @@ span {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 0;
+  line-height: 0
 }
 
 .images {
@@ -224,6 +237,7 @@ span {
   display: grid;
   position: relative;
   min-block-size: 668px;
+  block-size: 100vh;
   align-content: center;
   justify-content: center;
 }
@@ -239,7 +253,7 @@ span {
 
 @media (width >= 768px) {
   .header {
-    max-block-size: 1024px;
+    min-block-size: 1024px;
   }
 
   .decorations::before {
@@ -268,7 +282,7 @@ span {
   .huge-title {
     margin: 0;
     align-content: center;
-    line-height: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .title-text {
@@ -395,7 +409,6 @@ span {
 
   .footer-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    min-height: 1024px;
     align-content: center;
     justify-content: center;
   }
@@ -449,7 +462,6 @@ span {
 
   .footer-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    min-height: 768px;
     align-content: center;
     justify-content: center;
   }
