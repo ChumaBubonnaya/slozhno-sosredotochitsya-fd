@@ -5,7 +5,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--bg-color);
-  font-family: var(--font-family,"IBM Plex Mono", sans-serif);
+  font-family: var(--font-family,"IBM Plex Mono", monospace);
   font-weight: var(--font-weight-content-list);
   line-height: var(--line-height);
   text-align: var(--text-align);
@@ -40,7 +40,7 @@
 .title-text {
   grid-column: 1 / 5;
   grid-row: 3 / 4;
-  color: var(--color-subtitle-h3);
+  color: var(--color-subtitle);
   font-size: var(--font-size-theme-menu-item);
   margin: 0 10px 66px;
   block-size: min-content;
@@ -163,7 +163,7 @@
 }
 
 .card-title {
-  color: var(--color-subtitle-h2);
+  color: var(--color-subtitle-card-title);
   font-size: var(--font-size-theme-menu-item);
   font-weight: var(--font-weight-subtitle);
   margin: 0 10px 0;
@@ -182,10 +182,10 @@
 }
 
 .subtitle {
-  color: var(--color-subtitle-h3);
+  color: var(--color-subtitle);
   font-size: var(--font-size-theme-menu-item);
   font-weight: var(--font-weight-subtitle);
-  margin: 0px 10px 0;
+  margin: 0 10px 0;
 }
 
 .content_text-block {
@@ -204,7 +204,7 @@
 .card-text {
   font-size: var(--font-size-theme-menu-item);
   color: var(--color-text);
-  margin: 0px 14px 0 10px;
+  margin: 0 14px 0 10px;
 }
 
 .content-list {
@@ -254,6 +254,7 @@
 @media (width >= 768px) {
   .header {
     min-block-size: 1024px;
+    block-size: 100vh;
   }
 
   .decorations::before {
@@ -417,7 +418,7 @@
 @media (width >= 1024px) {
   .header {
     min-height: 768px;
-    block-size: auto;
+    block-size: 100vh;
   }
   .header__theme-menu {
     grid-column: 2 / 4;

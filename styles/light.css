@@ -4,8 +4,8 @@
   --color-title: #ffc2e6;
   --accent-color: #353430;
   --bg-color-text: #ff0070;
-  --color-subtitle-h2: #353430;
-  --color-subtitle-h3: #353430;
+  --color-subtitle-card-title: #353430;
+  --color-subtitle: #353430;
   --color-text: #353430;
   --font-family: "IBM Plex Mono";
   --font-size-theme-menu-item: 18px;
@@ -24,8 +24,8 @@
     --color-title: #ffc2e6;
     --accent-color: #353430;
     --bg-color-text: #ff0070;
-    --color-subtitle-h2: #353430;
-    --color-subtitle-h3: #353430;
+    --color-subtitle-card-title: #353430;
+    --color-subtitle: #353430;
     --color-text: #353430;
     --font-family: "IBM Plex Mono";
     --font-size-theme-menu-item: 18px;
